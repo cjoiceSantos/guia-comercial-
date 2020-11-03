@@ -1,0 +1,25 @@
+
+.categorycard__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categorycard__container img {
+    border-radius: 60px;
+}
+
+.categorycard__container h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #717171;
+}
+
+.slick-prev,
+.slick-next {
+    background: #808080 !important;
+
+
+}
+
+

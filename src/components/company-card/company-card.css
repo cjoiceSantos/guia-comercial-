@@ -1,0 +1,122 @@
+div#company-card {
+    width: 360px;
+    height: 130px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(233, 233, 233);
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+div#company-card img{
+    width: 45%;
+    height: 100%;
+    max-width:40%;
+    max-height:100%;
+    border-radius: 5px 0 0 5px;
+}
+
+div#company-card div.infor_company{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px 12px 12px 12px;
+}
+
+div#company-card div.infor_company div.header_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+
+
+div#company-card div.infor_company div.header_card span {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+div#company-card div.infor_company div.infor_card{
+    font-size: 14px;
+    padding-top: 5px;
+    color: #a3a3a3;
+}
+.card_actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card_actions button,
+.card_actions button:active,
+.card_actions button:focus {
+    outline: 0;
+    font-size: 0.8em;
+}
+
+.card_actions .button-card-company,
+.card_actions .button-card-company:active,
+.card_actions .button-card-company:focus {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #e7a74e;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.button-card-order {
+    border: none;
+    background: transparent;
+    padding: 0;
+    color: #e7a74e;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.card_actions button::after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px #e7a74e;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+    transform-origin:  50% 50%;
+}
+
+.card_actions button:hover:after {
+    transform: scaleX(1);
+}
+
+div#company-card div.infor_company svg#IconMore{
+    margin: 8% 0% 0% 0%;
+}
+
+div#company-card div.infor_company span.avaliation{
+    padding-right: 5px;
+    color: #e7a74e;
+}
+
+
+#tooltip-top > .tooltip-inner {
+  background: #f2f2f2;
+  color: #717171;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 12px;
+}
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 5px 5px 0;
+    border-top-color: #f2f2f2;
+}

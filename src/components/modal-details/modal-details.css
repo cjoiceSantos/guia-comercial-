@@ -1,0 +1,102 @@
+div.modal-content {
+    width: 600px;
+    max-width: 600px;
+}
+
+div.modal-company{
+   align-items: center;
+}
+
+div.evaluation-star {
+    display: flexbox;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px 0px 10px 0px;
+}
+
+div.modal-company h6{
+    color: rgb(189, 132, 27);
+    text-align: center;
+    font-weight: bold;
+}
+
+div.modal-company p{
+    text-align: center;
+    font-size: 18px;
+}
+
+div.modal-company P.evalutions-count{
+    font-size: 12px;
+    color: rgb(104, 103, 103);
+    margin-top: -8px;
+}
+
+div.icon-contact{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    font-size: 14px;
+    color: #717171;
+}
+
+div.icon-contact svg{
+    color: #717171;
+    margin-right: 15px;
+}
+
+#faInstagram {
+    color: #B32D7F;
+}
+
+#faWhatsapp {
+    color: #25D366;
+}
+
+div.modal-footer {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.modal-footer {
+    max-height:300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow-x:auto;
+    flex-wrap: wrap;
+}
+
+div.modal-footer div.card{
+
+
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 3px;
+}
+
+div.modal-footer div.card div.card-body{
+    padding: 7px;
+    margin: 0;
+}
+
+div.modal-footer div.card div.card-body p{
+   text-align: center;
+}
+
+div.modal-footer div.card div.card-body span{
+    font-weight: bolder;
+ }
+
+div.modal-footer img {
+    border-radius: 60px;
+    height: 40px;
+    width: 40px;
+    max-width: 50px;
+    max-height: 50px;
+}
+

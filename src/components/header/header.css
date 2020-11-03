@@ -1,0 +1,65 @@
+div#main-header{
+    height: 100px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(85, 83, 83);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: rgb(235, 234, 234);
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    width: 100%;
+}
+
+div#main-header div#image-logo img{
+    max-width:150px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+
+div#main-header span{
+    color: rgb(167, 165, 165);
+}
+
+div#main-header input.form-control{
+    background-color:  rgb(236, 236, 236);
+    font-size: 15px;
+    width:300px;
+    max-width: auto;
+    max-height: auto;
+}
+
+div#main-header div#nav-menu div.nav-item a{
+    color: rgb(85, 83, 83);
+    font-size: 17px;
+    cursor: pointer;
+    padding: 13px;
+}
+div#main-header div#nav-menu div.nav-item a:hover{
+    color:#e7a74e;
+}
+
+#search-field {
+    background: #f7f7f7;
+    padding: 10px;
+    width: 400px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+}
+
+#search-field input {
+    background: transparent;
+    border: none;
+    outline: 0;
+    margin-left: 10px;
+    width: 100%;
+}
+
+
