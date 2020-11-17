@@ -26,13 +26,12 @@ const Header = () => (
 
             <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic" variant="Secondary">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} /> Natal - Rio Grand...
+                    <FontAwesomeIcon icon={faMapMarkerAlt} /> Montanhas - Rio Grand...
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#/action-1"> Mudar a cidade </Dropdown.Item>
+                    <Dropdown.Item href="#/action-2"> Cidades cadastradas </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         </div>
@@ -50,7 +49,7 @@ const Header = () => (
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/highlights">
+                    <Nav.Link href="/destaques">
                         <FontAwesomeIcon icon={faAward} /> Destaques
                     </Nav.Link>
                 </Nav.Item>

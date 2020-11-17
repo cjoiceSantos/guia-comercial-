@@ -1,0 +1,32 @@
+div.form-register {
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+div.form-register h3{
+    margin-top: 30px;
+    font-size: 22px;
+    background: rgb(255,69,0, 0.7);
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align:center;
+}
+
+div.form-register section {
+    border: 1px solid rgb(224, 217, 217);
+    border-radius: 10px 10px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+div.form-register button.btn-light{
+    color: orangered;
+}
+
+div.form-register button.btn-light:hover{
+    color: white;
+    background-color: orangered;
+}

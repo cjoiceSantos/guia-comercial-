@@ -58,7 +58,7 @@ const ModalDetails = (props) => {
                 <Card>
                     <Card.Body>
                         <img src={img} />
-                        <span> Pedro Phittipald </span>
+                        <span> Maria </span>
                         <Card.Text>
                             <p>Some quick example text to build on the card titent.</p>
                         </Card.Text>
@@ -67,30 +67,13 @@ const ModalDetails = (props) => {
                 <Card>
                     <Card.Body>
                         <img src={img} />
-                        <span> Pedro Phittipald </span>
+                        <span> José </span>
                         <Card.Text>
                             <p>Some quick example text to build on the card titent.</p>
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Card>
-                    <Card.Body>
-                        <img src={img} />
-                        <span> Pedro Phittipald </span>
-                        <Card.Text>
-                            <p>Some quick example text to build on the card titent.</p>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Body>
-                        <img src={img} />
-                        <span> Pedro Phittipald </span>
-                        <Card.Text>
-                            <p>Some quick example text to build on the card titent.</p>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
+                
             </Modal.Footer>
         </Modal>
     );

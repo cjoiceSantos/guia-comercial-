@@ -8,16 +8,23 @@ import {
 } from 'react-router-dom'
 
 import Home from '../../pages/Home';
-/*import Login from '../../pages/Login';
-import AdminHome from '../AdminHome';
-import Highlights from '../../pages/Highlights';
 import Promotions from '../../pages/Promotions';
-import Search from '../../pages/Search';
-import Register from '../../pages/Register/';
-import Plans from '../../pages/Plans';
-import { isLogged } from '../../services/auth';
-import ChoiceProfile from '../../pages/ChoiceProfile';
+import Highlight from '../../pages/Highlight';
+import Register from '../../pages/Register';
 import RegisterUser from '../../pages/RegisterUser';
+import Login from '../../pages/Login';
+import ChoiceProfile from '../../pages/ChoiceProfile';
+import Plans from '../../pages/Plans';
+/*
+import AdminHome from '../AdminHome';
+
+
+import Search from '../../pages/Search';
+
+
+import { isLogged } from '../../services/auth';
+
+
 
 
 const PrivateRoute = ({ component, ...rest }) => {
@@ -33,7 +40,14 @@ export default function RouterView() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-     
+      <Route exact path="/home" component={Home} />
+      <Route exact path="/promocoes" component={Promotions}/> 
+      <Route exact path="/destaques" component={Highlight}/> 
+      <Route exact path="/login" component={Login}/> 
+      <Route exact path="/choice-profile" component={ChoiceProfile}/> 
+      <Route exact path="/register-user" component={RegisterUser}/>
+      <Route exact path="/plans" component={Plans}/>
+      <Route exact path="/register" component={Register}/>
     </Switch>
   );
 }

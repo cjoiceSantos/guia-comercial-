@@ -75,8 +75,8 @@ export default function CompanyCard(props) {
                             <button className="button-card-company" onClick={() => setEvalution(true)}>
                                 Avalie
                             </button>
-                            <button className="button-card-order" onClick={() => setEvalution(true)}>
-                                Pedir agora
+                            <button className="button-card-order" onClick={() => setDetails(true)}>
+                               Saber mais
                             </button>
                         </div>
                     </div>

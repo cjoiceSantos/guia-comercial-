@@ -1,0 +1,51 @@
+div.row {
+    align-items: center;
+    text-align: center;
+}
+
+div.col div.plan{
+    margin-top: 0;
+    margin-bottom: 40px;
+    height: 880px;
+    text-align: center;
+    align-items: center;
+}
+div.col div.plan div.list-group-item{
+    text-align: left;
+}
+
+div.plan div.plan-type{
+   padding: 8px;
+   background-color: #FF7F24;
+   border-radius: 4px;
+   margin-bottom: 6px;
+}
+
+div.plan button.btn-light a{
+    color: orangered;
+}
+
+div.col.information svg{
+   margin-bottom: 8px;
+   margin-top: 0;
+}
+
+div.col.information {
+    margin-top: 0;
+ }
+
+div.plan button.btn-light {
+    font-size: 14px;
+    margin: 10px 5px 0px 0px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+
+div.plan button.btn-light:hover a {
+    color: white;
+}
+
+div.plan button.btn-light:hover {
+    color: white;
+    background-color: orangered;
+}

@@ -1,0 +1,24 @@
+
+.promostionscard__info--place {
+    color: #717171;
+}
+
+.promostionscard__info--price {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #50a773;
+
+}
+
+.promostionscard__info--price span {
+    text-decoration: line-through;
+    color: #717171;
+    font-size: 16px;
+}
+
+
+.promostionscard__info--placevaluation {
+    font-size: 16px;
+    color: #e7a74e;
+}
