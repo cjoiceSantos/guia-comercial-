@@ -1,21 +1,23 @@
 import React , {useState, useEffect} from 'react';
 
-import { Container } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import CategoryCard from '../category-card';
+import api from '../../services/api';
 import "./category.css";
 
-import image from '../../images/sorveteria.jpg'
 import {Link, useHistory}  from 'react-router-dom';
 
 export default function Category () {
 
     const history = useHistory();
+    
     const [categories, setCategories] = useState([]);
-    const [link, setLink] = useState(''); 
+    const [link, setLink] = useState('');
+
     const [settings, setSettings] = useState({
         dots: false,
         infinite: true,
@@ -26,20 +28,21 @@ export default function Category () {
     });
 
    
-   useEffect( 
+    useEffect( 
         () => { 
-                setCategories(
-                    [
-                        {id:'1', name_category: 'Sorveteria', image_name: image},
-                        {id:'2', name_category: 'Supermercado', image_name: image},
-                        {id:'3', name_category: 'Barbearia', image_name: image},
-                        {id:'4', name_category: 'Farmácia', image_name: image},
-                        {id:'5', name_category: 'Lanchonete', image_name: image},
-                        {id:'6', name_category: 'Vestuário', image_name: image}
-                    ]
-                )   
+            api.get('category').then(response => {
+                console.log(response);
+                setCategories(response.data)
+                if (response.data.length < 4) {
+                    setSettings({
+                        ...settings,
+                        slidesToShow: response.data.length
+                    })
+                }
+            });
         }, []
     );
+
     return (
         <div id="categories">
             <div id="carousel-categories">

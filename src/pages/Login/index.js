@@ -14,8 +14,8 @@ import { Formik } from 'formik';
 import { withRouter } from 'react-router-dom';
 
 import './login.css'
-//import api from '../../services/api';
-//import { signIn } from '../../services/auth';
+import api from '../../services/api';
+import { signIn } from '../../services/auth';
 
 class Login extends Component {
 
@@ -24,7 +24,7 @@ class Login extends Component {
   }
 
   handleSubmit = async (values, { setErrors }) => {
-    /* try {
+    try {
       this.setState({ isLoading: true })
       const { data } = await api.post('/auth/login', values);
 
@@ -38,7 +38,7 @@ class Login extends Component {
         email: "Email ou senha inválidos"
       })
     }
- */
+
     this.setState({ isLoading: false })
   }
 

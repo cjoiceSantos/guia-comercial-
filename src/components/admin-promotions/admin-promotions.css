@@ -1,0 +1,19 @@
+
+
+.promotions__header {
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 30px 0 25px;
+    border-bottom: 2px solid #dedede;
+}
+
+div#actions {
+    display: flex;
+
+}
+
+.promotions__header#actions input {
+    width: 30%;
+    margin-left: 5px;
+}

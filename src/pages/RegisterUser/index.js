@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Form, Col, Button } from 'react-bootstrap';
 import { Formik } from 'formik';
-//import api from '../../services/api';
+import api from '../../services/api';
 //import { validateCPF } from '../../utils';
 
 // import { Container } from './styles';
@@ -31,7 +31,7 @@ function RegisterUser(props) {
       formData.append('email', email);
       formData.append('password', password);
       
-      //await api.post('/user', formData)
+      await api.post('/user', formData)
       props.history.push('/home')
   }
   catch (error) {

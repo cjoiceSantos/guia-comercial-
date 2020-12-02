@@ -10,25 +10,12 @@ import { debounce } from 'lodash';
 import { Formik } from 'formik';
 
 import './register.css';
-//import api from '../../services/api';
+import api from '../../services/api';
 import { validateCNPJ } from '../../utils';
 
 export default function Register(props) {
 
-    const [categories, setCategories] = useState([
-        {
-            category_id: 1,
-            name_category: 'Sorveteria'
-        },
-        {
-            category_id: 2,
-            name_category: 'Farmácia'
-        },
-        {
-            category_id: 3,
-            name_category: 'Restaurante'
-        }
-    ])
+    const [categories, setCategories] = useState([])
 
     const debouncedCep = useRef(
         debounce(async (cep, setFieldValue) => {
@@ -45,12 +32,12 @@ export default function Register(props) {
         }, 500)
     ).current
 
-    /* useEffect(
+    useEffect(
         () => {
             getCategories()
         },
         []
-    ) */
+    )
 
     const handleSubmit = async (values) => {
         
@@ -86,7 +73,7 @@ export default function Register(props) {
             formData.append('password', password);
             formData.append('description','');
 
-           // await api.post('/company', formData)
+            await api.post('/company', formData)
             props.history.push('/home')
         }
         catch (error) {
@@ -95,23 +82,23 @@ export default function Register(props) {
     }
 
     const getCategories = async () => {
-        /* try {
+        try {
             const { data } = await api.get('category')
             setCategories(data)
         }
         catch (err) {
             console.log(err)
-        } */
+        }
     }
 
     const getCep = async (cep) => {
-        /* try {
+        try {
             const { data } = await api.get(`https://viacep.com.br/ws/${cep.replace('-', '').trim()}/json`)
             return data
         } catch (error) {
             console.log(error)
             return null
-        } */
+        }
     }
 
     const handleValidate = values => {
@@ -459,7 +446,11 @@ export default function Register(props) {
                                                 }
                                             </Form.Group>
                                         </Form.Row>
-                                        <Button variant="light" type="submit">
+                                        <Button 
+                                            variant="light" 
+                                            type="submit"
+                                            onClick= { () => alert("Estamos trabalhando em algumas funcionalidades. Em breve poderá cadastrar sua empresa.")}
+                                        >
                                             Cadastrar minha empresa
                                         </Button>
                                     </section>

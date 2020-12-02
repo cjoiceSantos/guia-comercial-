@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Button, FormControl, Overlay, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
-import imageee from "../../images/sorveteria.jpg"
-
 export default function CompanyCard(props) {
 
     const [showEvalution, setEvalution] = useState(false);
@@ -37,7 +35,7 @@ export default function CompanyCard(props) {
     return (
         <div>
             <div id="company-card">
-                <img src={imageee} alt="supermercado logo" />
+                <img src={`http://localhost:3333/static/${image_name}`} alt="supermercado logo" />
                 <div className="infor_company">
                     <div className="infor_company--body">
                         <div className="header_card" >
@@ -76,7 +74,7 @@ export default function CompanyCard(props) {
                                 Avalie
                             </button>
                             <button className="button-card-order" onClick={() => setDetails(true)}>
-                               Saber mais
+                                Saber mais
                             </button>
                         </div>
                     </div>

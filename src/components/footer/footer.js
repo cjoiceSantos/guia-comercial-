@@ -13,7 +13,7 @@ const Footer = () => (
         <Row >
             <Col id="infor">
                 <img src={logo} alt="logo" />
-                <p> © Copyright 2020 - Guia Comercial dos Ex-man Ultimato - Todos os direitos reservados </p>
+                <p> © Copyright 2020 - Guia Comercial - Todos os direitos reservados </p>
             </Col>
 
             <Col id="social">

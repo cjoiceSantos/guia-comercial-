@@ -6,7 +6,7 @@ import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Modal, Container, Card, Row, Col } from 'react-bootstrap';
 import './modal-details.css';
 
-import img from "../../images/clinica.jpg";
+import img from "../../images/usuario.png";
 import { formatPhone } from '../../utils';
 const ModalDetails = (props) => {
 
@@ -58,9 +58,9 @@ const ModalDetails = (props) => {
                 <Card>
                     <Card.Body>
                         <img src={img} />
-                        <span> Maria </span>
+                        <span> João </span>
                         <Card.Text>
-                            <p>Some quick example text to build on the card titent.</p>
+                            <p class="comments"> Muito bom! </p>
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -69,11 +69,10 @@ const ModalDetails = (props) => {
                         <img src={img} />
                         <span> José </span>
                         <Card.Text>
-                            <p>Some quick example text to build on the card titent.</p>
+                            <p class="comments"> Gostei bastante. </p>
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                
             </Modal.Footer>
         </Modal>
     );

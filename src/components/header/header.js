@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./header.css";
 
 import logo from '../../images/logo.png';
@@ -30,8 +31,8 @@ const Header = () => (
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1"> Mudar a cidade </Dropdown.Item>
-                    <Dropdown.Item href="#/action-2"> Cidades cadastradas </Dropdown.Item>
+                    <Dropdown.Item href="#/action-1">Buscar cidade </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Cidades participantes</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         </div>
@@ -49,7 +50,7 @@ const Header = () => (
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/destaques">
+                    <Nav.Link href="/highlights">
                         <FontAwesomeIcon icon={faAward} /> Destaques
                     </Nav.Link>
                 </Nav.Item>

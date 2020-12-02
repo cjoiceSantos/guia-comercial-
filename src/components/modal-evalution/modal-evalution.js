@@ -17,7 +17,6 @@ const useStyles = makeStyles({
     },
   });
 
-
 export default class ModalEvalution extends React.Component{
 
     state = {
@@ -46,7 +45,7 @@ export default class ModalEvalution extends React.Component{
            
             <Modal show={show} onHide={onHide}>
                 <Modal.Header closeButton>
-                    <Modal.Title> Pedro, deixe seu feedback </Modal.Title>
+                    <Modal.Title> Deixe seu feedback </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div className="modal-company">
@@ -71,7 +70,11 @@ export default class ModalEvalution extends React.Component{
                             <Form.Control as="textarea" placeholder="comente aqui" />
                             
                         </Form.Group>
-                        <Button variant="secondary" type="submit">
+                        <Button 
+                            variant="secondary" 
+                            type="submit" 
+                            onClick= { () => alert("Estamos trabalhando em algumas funcionalidades. Em breve poderá avaliar esta empresa.")}
+                        >
                             avaliar <FontAwesomeIcon icon= {faCheckCircle}/>
                         </Button>
                         </Form> 

@@ -1,62 +1,24 @@
-import React,  { useEffect, useState }  from 'react'
+import React, {useState, useEffect} from 'react';
 
-import Content from '../../components/content/content'
+import Content from "../../components/content/content";
+import api from "../../services/api";
 
-export default function Highlight() {
+export default function Highlights() {
+    
+    const [companies, setCompanies] = useState([]);
 
-    const [companies, setCompanies] = useState([
-        {    company_id: '1',
-              name: 'Sorveteria da Maria',
-              description: 'mais variedades e qualidade da cidade',
-              evaluation: 5,
-              category: 'sorveteria',
-              instagram: '@sorvetedamaria',
-              whatsapp  : '(84) 0000-0000',
-              locality :  'Rua dos bobos',
-              number :  '0',
-              complements : '',
-              city :  'Montanhas',
-              uf :  'RN',
-              image_name : ''
-              },
-              { company_id: '1',
-              name: 'Sorveteria da Maria',
-              description: 'mais variedades e qualidade da cidade',
-              evaluation: 5,
-              category: 'sorveteria',
-              instagram: '@sorvetedamaria',
-              whatsapp  : '(84) 0000-0000',
-              locality :  'Rua dos bobos',
-              number :  '0',
-              complements : '',
-              city :  'Montanhas',
-              uf :  'RN',
-              image_name : ''
-              },
-              { company_id: '1',
-              name: 'Sorveteria da Maria',
-              description: 'mais variedades e qualidade da cidade',
-              evaluation: 5,
-              category: 'sorveteria',
-              instagram: '@sorvetedamaria',
-              whatsapp  : '(84) 0000-0000',
-              locality :  'Rua dos bobos',
-              number :  '0',
-              complements : '',
-              city :  'Montanhas',
-              uf :  'RN',
-              image_name : ''
-              }
-    ]);
+    useEffect(
+        async () => {
+            const response = await api.get('company/evaluations');
+            setCompanies(response.data);
+        }, []
+    );
 
-        return (
-            <div id = "div-highlights">
-                <Content 
-                    title="Com as melhores avaliações" 
-                    type="highlight" 
-                    companies={companies}
-                    companies_count = ''
-                />
-            </div>
-        );
+    return (
+        <Content 
+            title= "Com as melhores avaliações:" 
+            companies= {companies}
+            companies_count = ''
+        />
+    );
 }

@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import "./content.css";
-//import api from "../../services/api";
+import api from "../../services/api";
 
 export default function Content({title, companies, companies_count}){  
     return (
