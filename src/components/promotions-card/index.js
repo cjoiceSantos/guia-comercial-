@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, ButtonGroup, OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen, faTimes, faStar } from '@fortawesome/free-solid-svg-icons';
-
+import image_promotion from "../../images/promocao.png"
 import './promotions-card.css'
 
 export default function PromotionsCard (props) {
@@ -10,7 +10,7 @@ export default function PromotionsCard (props) {
   
     return (
       <Card style={{ marginBottom: 35, width: 350 }} >
-        <Card.Img variant="top" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/discoveries/ifood-capas-almoco10-app-v01-feb2020.png" />
+        <Card.Img variant="top" src={image_promotion} />
         <Card.Body>
         <Card.Title> {title} </Card.Title>
           <Card.Text>

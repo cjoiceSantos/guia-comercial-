@@ -8,8 +8,8 @@ import api from '../../services/api';
 
 function RegisterUser(props) {
 
-  const handleSubmit = async values => {
-    const {
+   const handleSubmit = async values => {
+  /*  const {
       first_name,
       last_name,
       cpf,
@@ -31,14 +31,15 @@ function RegisterUser(props) {
       formData.append('email', email);
       formData.append('password', password);
       
-      await api.post('/user', formData)
-      props.history.push('/home')
+      //const result = await api.post('/user', formData)
+     // console.log(formData)
+     props.history.push('/login')
   }
   catch (error) {
       console.log(error)
+  } */
+  alert("Estamos trabalhando em algumas funcionalidades. Em breve poderá se cadastrar na plataforma.") 
   }
-
-   }
   
   const handleValidate = values => { 
     const errors = {};
